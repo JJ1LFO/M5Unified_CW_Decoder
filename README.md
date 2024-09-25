@@ -1,7 +1,5 @@
 # M5Unified_CW_Decoder
 
-## Abstruct
-
 ## Description:
  Ported Android CW Decoder made by OZ1JMH to M5Unified (M5Core2).
 M5Core2 has a built-in microphone and a 2” LCD, making it perfect for CW decoder by itself.
