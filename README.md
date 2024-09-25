@@ -26,3 +26,4 @@ originally developed by Hjalmar Skovholm Hansen OZ1JHM.
 
 * Automatic frequency tracking function.
 * Microphone AGC maximum gain adjustment feature.
+* Support for Japanese Morse code
