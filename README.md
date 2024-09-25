@@ -24,6 +24,6 @@ originally developed by Hjalmar Skovholm Hansen OZ1JHM.
 
 ## ToDo
 
-* Automatic frequency tracking function.
+* Automatic tone frequency tracking function.
 * Microphone AGC maximum gain adjustment feature.
 * Support for Japanese Morse code
