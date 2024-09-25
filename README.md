@@ -9,7 +9,7 @@ When the parameters are adjusted for built-in microphne, it works very comfortab
 
 * Supports M5Unified (M5Core2).
 * Convert Goertzel algorithm to fixed-point arithmetic operations.
-* Vsualize detection magnitude.
+* Visualize detection magnitude.
 * Morse tape printing function.
 * Automatic Gain Control for microphone.
 
