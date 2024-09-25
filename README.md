@@ -17,7 +17,12 @@ When the parameters are adjusted for built-in microphne, it works very comfortab
 
 * Since it is coded in M5Unified, it should be easy to port to other models in M5Stack.
 
-* Video: https://youtu.be/B3Z8Gvv3AQ0
+* Video [![Video Title](https://img.youtube.com/vi/B3Z8Gvv3AQ0/0.jpg)](https://www.youtube.com/watch?v=B3Z8Gvv3AQ0)
 
 This program is a modified version of "OZ1JHM CW Decoder VER 1.01",
 originally developed by Hjalmar Skovholm Hansen OZ1JHM.
+
+## ToDo
+
+* Automatic frequency tracking function.
+* Microphone AGC maximum gain adjustment feature.
