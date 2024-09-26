@@ -30,7 +30,7 @@ originally developed by Hjalmar Skovholm Hansen OZ1JHM.
 - basic_op.[ch]
   - Signal processing basic operators, Compatible with ITU-T G.191 Software tools.
 - bilinear.[ch]
-  - Biliner tranfomation method for converting to digital transfer function from analog transfrer function.
+  - Bilinear tranfomation method for converting to digital transfer function from analog transfrer function.
 - f2q.h
   - Converting floating-point value to Q.n fixed-poing value macros.
 - filter.[ch]pp
