@@ -22,6 +22,24 @@ When the parameters are adjusted for built-in microphne, it works very comfortab
 This program is a modified version of "OZ1JHM CW Decoder VER 1.01",
 originally developed by Hjalmar Skovholm Hansen OZ1JHM.
 
+## Files
+- M5Unified_CW_Decoder.ino
+  - Modified from OZ1JHM decoder11.ino.
+- m5un.[ch]pp
+  - M5Core2 program with M5Unified library.
+- basic_op.[ch]
+  - Signal processing basic operators, Compatible with ITU-T G.191 Software tools.
+- bilinear.[ch]
+  - Biliner tranfomation method for converting to digital transfer function from analog transfrer function.
+- f2q.h
+  - Converting floating-point value to Q.n fixed-poing value macros.
+- filter.[ch]pp
+  - 1st and 2nd order IIR digital filter classes.
+- agc.[ch]pp
+  - Automatic Gain Control class.
+- goertzel.hpp
+  - Goertzel algorithm class.
+
 ## ToDo
 
 * Automatic tone frequency tracking function.
