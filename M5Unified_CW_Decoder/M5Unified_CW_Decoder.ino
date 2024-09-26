@@ -137,15 +137,15 @@
 
 //--------------------------------------------------------------------
 #if defined(USE_PARAMETERS_M5UNIFIED)
-	constexpr float sampling_freq = 4000;		/// 8000;
+	constexpr float sampling_freq = 8000;
 
 	#define	TARGET_FREQ						600
-	#define	NUMOF_TESTDATA				23	/// 53
+	constexpr size_t NUMOF_TESTDATA = 40;	// 53;	66; 67;
 	#define	NBTIME_MS							6
-	#define	MAGNITUDELIMIT_LOW		F2Q15(0.10)
-	#define	MAGNITUDE_SMOOTHING_UP			F2Q15(1.f/6)
-	#define	MAGNITUDE_SMOOTHING_DOWN		F2Q15(1.f/5)
-	#define	MAGNITUDE_THRESHOLD		0.7
+	#define	MAGNITUDELIMIT_LOW					F2Q15(0.12)
+	constexpr int16_t MAGNITUDE_SMOOTHING_UP		=	F2Q15(1.f/6);
+	constexpr int16_t MAGNITUDE_SMOOTHING_DOWN	= F2Q15(1.f/6);
+	constexpr float MAGNITUDE_THRESHOLD = 0.7;
 
 #elif defined(USE_PARAMETERS_OZ1JHM_ORIGINAL)
 	float sampling_freq = 8928.0;
