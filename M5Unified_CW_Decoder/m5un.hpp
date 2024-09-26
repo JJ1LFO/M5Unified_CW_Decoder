@@ -5,7 +5,6 @@
 #include "agc.hpp"
 #include "goertzel.hpp"
 
-#define	SAMPLING_FREQ_M5UNIFIED		8000
 
 extern IIRFilter2* bpf;
 extern Agc* agc;

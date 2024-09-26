@@ -46,8 +46,8 @@ public:
 	* @param[in] sampling_freq		Sampling frequency (Hz).
 	* @param[in] N								The number of samples.
 	*/
-	Goertzel(float freq = 1000, float sampling_freq = 8000, int N = 128) {
-		setFreq(freq, sampling_freq, N);
+	Goertzel(float freq = 1000, float sampling_freq = 8000, int N = 128, bool k_quantize = true) {
+		setFreq(freq, sampling_freq, N, k_quantize);
 	}
 
 	/**
@@ -57,10 +57,12 @@ public:
 	* @param[in] sampling_freq		Sampling frequency (Hz).
 	* @param[in] N								The number of samples.
 	*/
-	void setFreq(float freq, float sampling_freq, int num)
+	void setFreq(float freq, float sampling_freq, int num, bool k_quantize = true)
 	{
 		N = num;
-		int k = N*freq/sampling_freq + 0.5;
+
+		float k = (k_quantize)?  static_cast<int>(N*freq/sampling_freq + 0.5) : N*freq/sampling_freq;
+
 		coef = F2Q14(2*cos((2*M_PI*k)/N));
 
 		att = F2Q15(1.0f/N);

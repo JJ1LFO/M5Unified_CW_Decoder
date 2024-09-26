@@ -137,9 +137,10 @@
 
 //--------------------------------------------------------------------
 #if defined(USE_PARAMETERS_M5UNIFIED)
+	constexpr float sampling_freq = 4000;		/// 8000;
 
 	#define	TARGET_FREQ						600
-	#define	NUMOF_TESTDATA				53
+	#define	NUMOF_TESTDATA				23	/// 53
 	#define	NBTIME_MS							6
 	#define	MAGNITUDELIMIT_LOW		F2Q15(0.10)
 	#define	MAGNITUDE_SMOOTHING_UP			F2Q15(1.f/6)
@@ -147,6 +148,7 @@
 	#define	MAGNITUDE_THRESHOLD		0.7
 
 #elif defined(USE_PARAMETERS_OZ1JHM_ORIGINAL)
+	float sampling_freq = 8928.0;
 
 	#define	TARGET_FREQ						558.0
 	#define	NUMOF_TESTDATA				48
@@ -156,6 +158,7 @@
 	#define	MAGNITUDE_THRESHOLD		0.6
 
 #elif defined(USE_PARAMETERS_FOR_GROVE_SOUND_SENSOR_MIC)
+	float sampling_freq = 8928.0;
 
 	#define	TARGET_FREQ						600.0
 	#define	NUMOF_TESTDATA				53
@@ -237,7 +240,6 @@ float Q1 = 0;
 float Q2 = 0;
 float sine;
 float cosine;  
-float sampling_freq=8928.0;
 float target_freq=TARGET_FREQ; /// adjust for your needs see above
 
 #if defined(USE_BOARD_M5UNIFIED)

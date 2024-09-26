@@ -173,14 +173,12 @@ static void Splash(void)
 
 void m5un_setup(float target_freq, float sampling_freq, int numof_testdata, int16_t smoothing_up, int16_t smoothing_down)
 {
-	sampling_freq = SAMPLING_FREQ_M5UNIFIED;
-
 	bpf = new IIRFilter2(target_freq, sampling_freq, FILTER_TYPE_BPF, 0.7071);
 	agc = new Agc(0.7, 20.0, 5, 5000, sampling_freq);
 
 	smoother = new Smoother(smoothing_up, smoothing_down);
 
-	goertzel = new Goertzel(target_freq, sampling_freq, numof_testdata);
+	goertzel = new Goertzel(target_freq, sampling_freq, numof_testdata, false);
 
 	M5.begin();
 
