@@ -38,7 +38,7 @@ originally developed by Hjalmar Skovholm Hansen OZ1JHM.
 - agc.[ch]pp
   - Automatic Gain Control class.
 - goertzel.hpp
-  - Goertzel algorithm class.
+  - Goertzel algorithm class with floating-point arithmatic operation.
 
 ## ToDo
 
