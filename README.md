@@ -34,11 +34,11 @@ originally developed by Hjalmar Skovholm Hansen OZ1JHM.
 - f2q.h
   - Converting floating-point value to Q.n fixed-poing value macros.
 - filter.[ch]pp
-  - 1st and 2nd order IIR digital filter classes.
+  - 1st and 2nd order fixed-point IIR digital filter classes.
 - agc.[ch]pp
   - Automatic Gain Control class.
 - goertzel.hpp
-  - Goertzel algorithm class with floating-point arithmatic operation.
+  - Goertzel algorithm class with fixed-point arithmatic operation.
 
 ## ToDo
 
